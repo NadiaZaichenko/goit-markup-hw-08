@@ -1,0 +1,24 @@
+.button {
+    display:block;
+    font-weight: var(--H3);
+    font-size: var(--font-size-second);
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--accent-color);
+    background-color:var(--btn-color);
+    cursor: pointer;
+    margin:auto;
+    width: 216px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: var(--btn-radius);
+    border-width: var(--btn-border-width);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color:var(--btn-color-hover-focus);
+     }
+ }  
+
+ 
