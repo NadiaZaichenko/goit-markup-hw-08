@@ -22,8 +22,6 @@
   --btn-color-hover-focus: #188ce8;
   --btn-radius: 4px;
   --btn-border-width: 0px;
-  /*Width*/
-  --container: 1200px;
   /*icon*/
   --fill-icon: #AFB1B8;
 }
@@ -62,9 +60,23 @@ body {
 }
 
 .container {
-  width: var(--container);
   margin: auto auto;
   padding: 0 15px 0 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .button {
@@ -108,13 +120,6 @@ body {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bcg.png);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bcg.png);
 }
-
-.container {
-  width: var(--container);
-  margin: auto auto;
-  padding: 0 15px 0 15px;
-}
-
 .hero__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -133,6 +138,12 @@ body {
   color: var(--accent-color);
   margin: 0;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    font-size: 26px;
+    line-height: 42px;
+  }
 }
 
 .button {
@@ -161,12 +172,6 @@ body {
 .description-work {
   padding-top: 94px;
   margin: auto;
-}
-
-.container {
-  width: var(--container);
-  margin: auto auto;
-  padding: 0 15px 0 15px;
 }
 
 .description-work__work-icon {
@@ -221,12 +226,6 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
   margin: auto;
-}
-
-.container {
-  width: var(--container);
-  margin: auto auto;
-  padding: 0 15px 0 15px;
 }
 
 .description__subtitle {
@@ -297,12 +296,6 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
   margin: auto;
-}
-
-.container {
-  width: var(--container);
-  margin: auto auto;
-  padding: 0 15px 0 15px;
 }
 
 .our-team__subtitle-team {
@@ -422,23 +415,22 @@ body {
 }
 
 .header-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
 }
+@media screen and (min-width: 480px) {
+  .header-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 
 .header-line {
   border-bottom: 1px solid #ECECEC;
-}
-
-.container {
-  width: var(--container);
-  margin: auto auto;
-  padding: 0 15px 0 15px;
 }
 
 .header-nav {
