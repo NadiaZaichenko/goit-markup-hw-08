@@ -75,6 +75,13 @@ body {
     margin: auto auto;
     padding: 0 15px 0 15px;
 }
+
+@media screen and (min-width: 480px) {
+    .container {
+        width: 480px;
+    }
+  }
+
 .header-nav {
     display: flex;
     align-items: center;
