@@ -10,15 +10,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css"> 
-    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
 <!--Верхня лінія-->
    <header>
         <div class="header-container container">
+            <a class="logo" href=""><span class="first-part">Web</span><span class="last-part">Studio</span></a>
            <nav class="header-nav">
-         <a class="logo" href=""><span class="first-part">Web</span><span class="last-part">Studio</span></a>
         <ul class="nav-list list">
             <li class="header-nav-item"><a href="./index.html" class="header-nav-link current link">Студія</a></li>
             <li class="header-nav-item"><a href="./portfolio.html" class="header-nav-link link">Портфоліо</a></li>
@@ -51,26 +50,36 @@
           </li>
             </div>
         </ul> 
+
+         <button title="button"
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="menu-icon" width="40px" height="40px">
+            <use href="./images/icons.svg.svg#menu-mobile"></use>
+        </svg>
+      </button >
         </div>
-        
+    
     </header>
 <!--main- основний зміст-->
     <main>
 <!--Шапка-->
-    <section class="hero">
-        <div clas="container">
+    <!--<section class="hero">
+        <div class="container">
            <h1 class="hero__title">Ефективні рішення для<br> вашого бізнесу</h1>
         <button type="button" class="button btn"
         data-modal-open>Замовити послугу</button>  
         </div>
-    </section>
+    </section>-->
 <!--Переваги в роботі-->
-    <!--<section class="description-work">
+    <section class="description-work">
         <div class="container">
          <h2 class="visually-hidden">Переваги в роботі</h2>
          <ul class="description-work__work-item list">
              
-            <li>
+            <li class="description-work__set">
             <div class="description-work__work-icon">
                 <svg class="description-work__img-icon" width="70" height="70">
                     <use href="./images/icons.svg.svg#antenna"></use>
@@ -79,7 +88,7 @@
                 <h3 class="description-work__item">УВАГА ДО ДЕТАЛЕЙ</h3>
             <p class="description-work__desc-text">Ідейні міркування,і навіть початок повсякденної роботи з формування позиції.</p></li>
             
-            <li>
+            <li class="description-work__set">
                 <div class="description-work__work-icon">
                     <svg class="description-work__img-icon" width="70" height="70">
                         <use href="./images/icons.svg.svg#clock"></use>
@@ -88,7 +97,7 @@
                 <h3 class="description-work__item">ПУНКТУАЛЬНІСТЬ</h3> 
             <p class="description-work__desc-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p></li>
            
-            <li>
+            <li class="description-work__set">
                 <div class="description-work__work-icon">
                     <svg class="description-work__img-icon" width="70" height="70">
                         <use href="./images/icons.svg.svg#diagram"></use>
@@ -97,7 +106,7 @@
                 <h3 class="description-work__item">ПЛАНУВАННЯ</h3>
             <p class="description-work__desc-text">Так само консультація з широким активом значною мірою зумовлює.</p></li>
             
-            <li>
+            <li class="description-work__set">
                 <div class="description-work__work-icon">
                     <svg class="description-work__img-icon" width="70" height="70">
                         <use href="./images/icons.svg.svg#astronaut"></use>
@@ -108,7 +117,7 @@
          </ul> 
         </div>
         
-    </section>-->
+    </section>
 <!--Зміст роботи в фото-->    
     <!--<section class="description">
         <div class="container">
@@ -601,8 +610,42 @@
         </form>
     </div>
  </div>-->
+  <!--Mobile menu-->
  
+ <div class="menu-container js-menu-container" id="mobile-menu">
+    <button title="button" class="menu-toggle js-close-menu">
+      <svg class="menu-icon" width="40px" height="40px">
+        <use href="./images/icons.svg.svg#close-mobile-menu"></use>
+      </svg>
+    </button >
+
+    <ul class="mobile-menu">
+      <li><a  href ="" class ="mobi link" >Студія</a > </li >
+      <li><a  href ="" class ="mobi link" >Портфоліо</a ></li >
+      <li><a  href ="" class ="mobi link" >Контакти</a ></li >
+    </ul>
+
+    <ul class="mobile-contacts">
+        <li class="list"><a href="" class="link tel">+38 096 111 11 11</a></li>
+        <li class="list"><a href="" class="link mail">info@devstudio.com</a></li>
+    </ul>
+
+    <ul>
+        <li class="list"><a href="" class="social-link link">Instagram</a></li>
+        <li class="list"><a href="" class="social-link link">Twitter</a></li>
+        <li class="list"><a href="" class="social-link link">Facebook</a></li>
+        <li class="list"><a href="" class="social-link link">LinkedIn</a></li>
+    </ul>
+  </div>
+
  <script src="./modal.js"></script>
+ <script
+ defer
+ src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+ integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+ crossorigin="anonymous"
+></script>
+<script defer src="./mobile-menu.js"></script>
 
 </body>
 </html>

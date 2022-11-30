@@ -1,34 +1,74 @@
 .description-work{
-   padding-top: 94px;
-   margin: auto;
+   margin:auto;
+   margin-top: 60px;
+   margin-bottom: 60px;
+     
+   @media screen and (min-width: 1200px) {
+       padding-top: 94px;
+       margin: auto;
+   }
 }
 
 .description-work__work-icon {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 270px;
+   text-align: center;
    height: 120px;
    background-color: var(--bcg-color-second);
-   margin-bottom: 30px;
+   
    border-radius: var(--btn-radius);
-}
-.description-work__work-item {
 
-   display: flex;
-   gap:30px;
-   justify-content: space-between;
-   margin: 0;
+   @media screen and (min-width: 480px) {
+      width: 450px;
+  }
+
+   @media screen and (min-width: 768px) {
+      width: 354px;
+  }
+
+   @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 270px;
+  }
+}
+
+.description-work__img-icon {
+   margin: 25px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.description-work__work-item {
+   margin: 0 auto;
    padding: 0;
+
+   @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: -30px;
+      margin-left: -30px;
+   }
+
+   @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+   }
 }
 .description-work__item {
+   text-align: center;
    font-weight: var(--H2);
    font-size: var(--font-size);
    line-height: 1.1;
    letter-spacing: 0.03em;
    text-transform: uppercase;
    color: var(--color);
-   margin: 0;
+   margin-top: 30px;
+   margin-bottom: 10px;
+
+   @media screen and (min-width:768px) {
+      text-align: start;
+   }
 }
 .description-work__desc-text {
    font-size: var(--font-size);
@@ -37,4 +77,23 @@
    color: var(--contakt);
    margin:0;
    margin-top: 10px;
+}
+
+.description-work__set { 
+   margin-bottom: 30px;
+
+  @media screen and (min-width:768px) {
+    width: 354px;
+    flex-basis: 50%;
+    flex-basis: calc(100%/2 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+   @media screen and (min-width: 1200px) {
+      justify-content: center;
+      align-items: center;
+      width: 270px;
+      flex-basis: 30px;
+   }
 }
