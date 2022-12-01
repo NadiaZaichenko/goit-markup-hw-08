@@ -1,3 +1,22 @@
+.social-footer{
+    text-align: center;
+     margin-top: 60px;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+       margin-top:0;
+        
+    }  
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+}
+
 .attention {
     color: #FFFFFF;
     margin-bottom: 20px;
@@ -9,6 +28,10 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
+    @media screen and (min-width: 1200px) {
+       margin: 0;
+    }
+
 }
 .social-list {
     display: flex;
@@ -16,7 +39,7 @@
     justify-content: center;
     gap: 10px;
     margin:auto;
-    margin-top: 16px;
+    margin-top: 20px;
     padding: 0;
 }
 .social-link-footer {

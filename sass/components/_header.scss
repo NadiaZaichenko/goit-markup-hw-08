@@ -1,7 +1,7 @@
 .header-container {
     display: flex;
     align-items: center;
-    margin: 0;
+    margin: auto;
 }
 .header-line {
     border-bottom: 1px solid #ECECEC;
@@ -9,28 +9,25 @@
 .header-nav {
     display: none;
 
-    @media screen and(min-width:768px) {
+    @media screen and (min-width:768px) {
         display: flex;
         align-items: center;
         margin-right: auto;
     }
 }
+
 .list {
     list-style: none;
 
 }
 .nav-list {
-    display: none;
+    margin: 0 auto;
 
-    @media screen and (min-width: 768px) {
-        display: block;
-        align-items: flex-end;
-        padding: 0;
-        margin: 0;
-    }
-
-    @media screen and (min-width: 1200px) {
-        
+    @media screen and (min-width:768px) {
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+        padding-left: 88px;
     }
 }
 .link {
@@ -40,7 +37,7 @@
     &:hover,
     &:focus {
     color: #2196F3;
-}
+ }
 }
 
 .header-nav-link {
@@ -70,10 +67,39 @@
 .header-nav-item:not(:last-child) {
     margin-right: 50px;
 }
+
+.nav-list-contact{
+    display: none;
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: flex-end;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+
+    }
+    
+}
+
+.mail-header{
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+        &:not(:last-child){
+           margin-right: 40px; 
+        }
+        
+    }
+}
 .header-tel-link {
     display: flex;
     align-items: center;
-    justify-content: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -90,19 +116,12 @@
     letter-spacing: 0.02em;
     color: var(--contakt);
 }
-.mail-header {
-    margin-right: 30px;
-}
 .contact {
-    display: flex;
-    justify-content: center;
-    align-self: baseline;
+   display: block;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width:1200px) {
         display: inline-flex;
     }
-    
- 
 }
 .contact-icon {
     fill: #757575;
@@ -112,5 +131,18 @@
     .link:hover  &,
     .link:focus  & {
     fill: #2196F3;
+    }
+   
 }
+.mail{
+    @media screen and (max-width: 1999px) {
+        width: 14px;
+        height: 10px;
+    }
+}
+.tel{
+    @media screen and (max-width: 1999px) {
+        width: 10px;
+        height: 14px;
+    }
 }
