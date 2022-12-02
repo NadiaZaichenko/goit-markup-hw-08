@@ -1574,7 +1574,7 @@ img {
 
 .input {
   display: block;
-  width: 370px;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1626,7 +1626,7 @@ img {
 
 .for-comment {
   display: block;
-  width: 370px;
+  width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1684,7 +1684,8 @@ img {
 }
 
 .label-checkbox {
-  padding: 20px 0 30px;
+  padding: 15px 0;
+  margin-bottom: auto;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1693,6 +1694,12 @@ img {
       -ms-flex-align: center;
           align-items: center;
   gap: 8px;
+}
+@media screen and (min-width: 433px) {
+  .label-checkbox {
+    padding: 20px 0 30px;
+    margin: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .label-checkbox {
