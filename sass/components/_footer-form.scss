@@ -66,6 +66,14 @@
     outline: none;
     }
 
+    @media screen and (min-width:768px) {
+        width: 358px;
+        margin: 0;
+        margin-right: 12px;
+        margin-bottom: 20px;
+    }
+
+
     @media screen and (min-width:1200px) {
         width: 358px;
         margin: 0;
