@@ -1382,7 +1382,6 @@ img {
   .footer-mail-form {
     width: 358px;
     margin: 0;
-    margin-right: 12px;
     margin-bottom: 20px;
   }
 }
@@ -1706,6 +1705,9 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -1770,7 +1772,7 @@ img {
 @media screen and (min-width: 1200px) {
   .icon-checkbox {
     top: 22px;
-    left: 22px;
+    left: 20px;
   }
 }
 

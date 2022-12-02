@@ -149,6 +149,7 @@
 
     @media screen and (min-width:1200px) {
         justify-content: center;
+        align-items: baseline;
     }
 }
 .consent {
@@ -203,7 +204,7 @@
 
     @media screen and (min-width: 1200px) {
         top: 22px;
-        left: 22px;
+        left: 20px;
     }
 }
 .form-checkbox:checked + svg {
