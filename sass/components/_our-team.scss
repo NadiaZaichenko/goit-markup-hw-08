@@ -20,13 +20,10 @@
    margin: auto;
    margin-bottom: 30px;
 
-   @media screen and (min-width:768px) {
-    font-size: var(--font-size-forth);
-   line-height: 1.16;
-   }
-
    @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
+    font-size: var(--font-size-forth);
+   line-height: 1.16;
    }
 }
 .our-team__item-team {
